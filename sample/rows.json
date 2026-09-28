@@ -1,0 +1,20 @@
+{
+  "budget": 2,
+  "bad_rule_code": "E_BAD_RULE",
+  "bad_row_code": "E_BAD_ROW",
+  "bad_values_code": "E_BAD_VALUES",
+  "bad_arity_code": "E_BAD_ARITY",
+  "dup_row_code": "E_DUP_ROW",
+  "no_violation_code": "E_NO_VIOLATION",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "rules": [], "checked": [], "violated": [], "waived": 0, "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "rule", "col": 1, "lo": 0, "hi": 10 },
+    { "id": 2, "kind": "rule", "col": 2, "lo": 0, "hi": 5 },
+    { "id": 3, "kind": "scan", "row": 1, "values": [3, 9] },
+    { "id": 4, "kind": "scan", "row": 2, "values": [20, 1] },
+    { "id": 5, "kind": "waive", "row": 1, "col": 2 },
+    { "id": 6, "kind": "rule", "col": 1, "lo": 0, "hi": 30 },
+    { "id": 7, "kind": "scan", "row": 3, "values": [25, 0] }
+  ]
+}
